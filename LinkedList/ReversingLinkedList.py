@@ -1,7 +1,7 @@
 class Node: 
-    def __init__(self, data, next=None):   #Class has 2 variables: data which holds a piece of data , and the second, next contains the next Node in the list
+    def __init__(self, data):   #Class has 2 variables: data which holds a piece of data , and the second, next contains the next Node in the list
         self.data = data
-        self.next = next
+        self.next = None
 
 class LinkedList:     #Define a class to represent linked list,with an instance variable called head to hold lists's head
     def __init__(self):
