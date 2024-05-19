@@ -9,7 +9,7 @@ class LinkedList:     #Define a class to represent linked list,with an instance 
 
     def search(self, target): #The search method accepts one parameter called target, which is the piece of data you are looking for. 
         current = self.head
-        while current.next:    #You iterate through the linked list and if current node's data matches target value, return True
+        while current:    #You iterate through the linked list and if current node's data matches target value, return True
             if current.data == target:
                 return True
             else:          #If current node's data is not a match, you set current to the next node in the linked list and continue iterating
