@@ -3,6 +3,7 @@ class Node:
         self.data = data
         self.next = next
 
+#Iterative Approach
 class LinkedList:     #Define a class to represent linked list,with an instance variable called head to hold lists's head
     def __init__(self):
         self.head = None
@@ -15,6 +16,11 @@ class LinkedList:     #Define a class to represent linked list,with an instance 
             else:          #If current node's data is not a match, you set current to the next node in the linked list and continue iterating
                 current = current.next
         return False  #If you reached the end of your linked list without a match, you know it is not in your list and return False
-        
 
-
+#Recursive Approach
+def search(head, target):
+    if head == None:
+        return False
+    if head.val == target:
+        return True
+    return search(head.next, target)
