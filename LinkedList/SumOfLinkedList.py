@@ -3,7 +3,7 @@ class Node:
         self.data = data
         self.next = None
 
-#Iterative Version
+#Iterative Solution
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -17,6 +17,10 @@ class LinkedList:
 
         return summation
 
+#Recursive Solution
+    def SumOfLinkedList(self, head):
+        if head == None:
+            return 0
+        return head.val + SumOfLinkedList(head.next)
 
-    
 
