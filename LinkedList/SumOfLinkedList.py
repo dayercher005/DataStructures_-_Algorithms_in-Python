@@ -21,6 +21,6 @@ class LinkedList:
     def SumOfLinkedList(self, head):
         if head == None:
             return 0
-        return head.val + SumOfLinkedList(head.next)
+        return head.data + SumOfLinkedList(head.next)
 
 
