@@ -13,7 +13,7 @@ class LinkedList:     #Define a class to represent linked list,with an instance 
             return
         current = self.head    #If list has a head, find the last node in linked list and create a new node and set its instance variable next to it.
         while current.next:    # Use a while loop that continues as long as current.next is not None because you know you are at the end yof your linked list when it is
-            current = current.head  #Inside while loop, continually assign current to current.next until current is None and while loop terminates
+            current = current.next  #Inside while loop, continually assign current to current.next until current is None and while loop terminates
         current.next = Node(data)   #The variable current now holds the last node in list so create a new node and assign it to current.next
 
     def __str__(self):        #You can add the __str__ method to your LinkedList class to print all of the nodes in your list
